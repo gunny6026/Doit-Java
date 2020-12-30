@@ -2,30 +2,46 @@ package classpart;
 
 public class Student {
 	
-	int studentId;
-	String studentName;
-	int grade;
+	int id;
+	String name;
 	String address;
+	
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
 	public Student(String aa) {
-		this.studentName = aa;
+		this.name = aa;
 	}
-	
-	public String aaa() {
-		
-		return studentName;
-	}
-	
-	public int bbb() {
-		
-		return studentId;
+
+	public Student() {
 	}
 
 	@Override
 	public String toString() {
-		return "Student : studentId=" + studentId + ", studentName=" + studentName + ", grade=" + grade + ", address="
-			+ address + "";
+		return "학생정보:  id=" + id + ", name=" + name + " , address ="+address;
 	}
+	
+//	public String aaa() {
+//		
+//		return name;
+//	}
+//	
+//	public int bbb() {
+//		
+//		return id;
+//	}
+
+//	@Override
+//	public String toString() {
+//		return "Student : studentId=" + studentId + ", studentName=" + studentName + ", grade=" + grade + ", address="
+//			+ address + "";
+//	}
 	
 	
 	

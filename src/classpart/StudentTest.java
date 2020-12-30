@@ -6,9 +6,12 @@ public class StudentTest {
 	
 	public static void main(String[] args) {
 		
-		Student st = new Student("박건희");
+		Student student = new Student("건희");
 		
-		System.out.println(st.bbb());
+		
+		student.setAddress("사하구 비봉로");
+		
+		System.out.println(student);
 		
 	}
 
